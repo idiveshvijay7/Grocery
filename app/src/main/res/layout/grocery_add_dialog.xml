@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_shade_1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add items"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:id="@+id/idTVHeading"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/idTVHeading">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idedititemname"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:hint="Enter item name"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idedititemquantity"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:hint="Enter Quantity"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idedititemprice"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:hint="Enter price"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:id="@+id/idbtncancel"
+                    android:text="Cancel"
+                    android:background="@drawable/cutom_button_back"
+                    android:textAllCaps="false">
+
+                </Button>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:id="@+id/idbtnadd"
+                    android:text="Add"
+                    android:background="@drawable/cutom_button_back"
+                    android:textAllCaps="false">
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
